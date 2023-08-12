@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iChoveu App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>iChoveu</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-    <div id="root"></div>
-    <script module="scritp" src="src/main.js"></script>
+    <header>
+        <a href="./"><img src="./src/imgs/iChoveuIcon.png" alt="page icon" class="logo"></a>
+        <form id="search-form">
+          <input type="text" name="city" placeholder="Pesquisar cidade" id="search-input" />
+          <button type="submit" id="search-button">
+            <i class="material-icons">
+              search
+            </i>
+          </button>
+        </form>
+      </header>
+      <ul id="cities"></ul>
+      <div id="forecast-container" class="forecast-container hidden">
+        <button id="close-forecast">
+          <i class="material-icons">
+            close
+          </i>
+        </button>
+        <div id="weekdays" class="weekdays"></div>
+      </div>
+
+      <script src="src/main.js" type="module"></script>
 </body>
 </html>

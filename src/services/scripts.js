@@ -1,5 +1,5 @@
 // Import functions
-import { searchCities, getWeatherByCity, fetchForecastData } from './weatherAPI';
+import { searchCities, getWeatherByCity, fetchForecastData } from './api';
 
 /**
  * Cria um elemento HTML com as informações passadas

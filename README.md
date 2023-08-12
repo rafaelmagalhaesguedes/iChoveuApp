@@ -14,13 +14,13 @@ Link do App no ar: <a href="https://ichoveu-rafaelmagalhaesguedes.vercel.app/"> 
 
 ### Página inicial
 
-![initial-page](caminho/para/imagem.png)
+![initial-page](https://github.com/rafaelmagalhaesguedes/iChoveuApp/blob/main/images/initial-page.png)
 
 ### Resultados de busca
 
-![resultados de busca](caminho/para/imagem.png)
+![resultados de busca](https://github.com/rafaelmagalhaesguedes/iChoveuApp/blob/main/images/display-data.png)
 
-![botão previsão](caminho/para/imagem.png)
+![botão previsão](https://github.com/rafaelmagalhaesguedes/iChoveuApp/blob/main/images/forecast-button.png)
 
 
 ## Primeiros Passos

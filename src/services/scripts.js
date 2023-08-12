@@ -116,7 +116,7 @@ const createCityHeading = ({ name, country }) => {
 };
 
 /**
- * Create Button Forecast
+ * Create Button
  */
 const createButtonForecast = (cityInfo) => {
     const forecastButton = createElement('button', 'view-forecast-button', 'Ver previsão');
@@ -128,6 +128,7 @@ const createButtonForecast = (cityInfo) => {
         alert(error.message);
         }
     });
+    return forecastButton;
   };
 
 /**
@@ -144,16 +145,13 @@ export const createCityElement = (cityInfo) => {
   return cityElement;
 };
 
-/**
- * Get array promises
- */
-export const getArrayPromises = async (cityInfo) => {
-    const weatherPromises = cityInfo.map(async (city) => {
-      const weather = await getWeatherByCity(city.url);
-      return { ...city, ...weather };
-    });
-    return weatherPromises;
-  };
+const getPromises = (searchCity) => {
+  const weatherPromises = searchCity.map(async (city) => {
+    const weather = await getWeatherByCity(city.url);
+    return { ...city, ...weather };
+  });    
+  return weatherPromises;
+};
 
 /**
  * Event submit form
@@ -162,8 +160,8 @@ export const handleSearch = async (event) => {
   event.preventDefault();
   clearChildrenById('cities');
   const searchInput = document.getElementById('search-input').value;
-  const cityInfo = await searchCities(searchInput);
-  const weatherPromises = getArrayPromises(cityInfo);
+  const searchCity = await searchCities(searchInput);
+  const weatherPromises = getPromises(searchCity);
   const weatherData = await Promise.all(weatherPromises);
   return weatherData;
 };

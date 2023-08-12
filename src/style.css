@@ -296,6 +296,25 @@ ul {
   .logo-img {
     padding: 8px;
   }
+  
+  .forecast-container{
+    top: 70%;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .forecast {
+    width: 95%;
+    margin: 5px;
+  }
+
+  .weekdays {
+    width: 100%;
+    height: 600px;
+    flex-direction: column;
+    overflow: auto;
+  }
 }
 
 @media only screen and (max-width: 280px) {

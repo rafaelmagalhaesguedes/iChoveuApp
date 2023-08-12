@@ -32,6 +32,10 @@ Link do App no ar: <a href="https://ichoveu-rafaelmagalhaesguedes.vercel.app/"> 
 
 ![botão previsão](https://github.com/rafaelmagalhaesguedes/iChoveuApp/blob/main/images/forecast-button.png)
 
+### Previsão do Tempo - Layout Mobile
+
+![botão previsão](https://github.com/rafaelmagalhaesguedes/iChoveuApp/blob/main/images/forecast-button-mobile.png)
+
 
 ## Primeiros Passos
 

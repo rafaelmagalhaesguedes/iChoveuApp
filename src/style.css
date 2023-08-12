@@ -73,7 +73,7 @@ ul {
 .city {
   width: 370px;
   height: 370px;
-  background-color: rgb(0, 176, 255);
+  background-color: rgb(0, 151, 219);
   border: none;
   border-bottom: none;
   box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.33);
@@ -86,6 +86,7 @@ ul {
 .city-name {
   font-weight: 700;
   font-size: 32px;
+  padding-top: 10px;
   text-align: center;
   color: white;
 }
@@ -132,6 +133,7 @@ ul {
   font-weight: 700;
   font-size: 14px;
   text-align: center;
+  color: white;
 }
 
 .view-forecast-button {
@@ -303,7 +305,7 @@ ul {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(60vw - 1200px));
+    transform: translateX(calc(10vw - 700px));
   }
 }
 
@@ -312,7 +314,7 @@ ul {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-60vw + 1200px));
+    transform: translateX(calc(-10vw + 700px));
   }
 }
 

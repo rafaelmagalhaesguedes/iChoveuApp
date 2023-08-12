@@ -91,7 +91,7 @@ const createIconContainer = (icon) => {
 const createCityInfo = ({ condition, temp, icon }) => {
   const infoContainer = createElement('div', 'city-info-container');
   const conditionElement = createElement('p', 'city-condition', condition);
-  const tempContainer = createElement('p', 'city-temp', `${temp} ºC`);
+  const tempContainer = createElement('p', 'city-temp', `${temp} º`);
   const iconContainer = createIconContainer(icon);
   const conditionTempContainer = createElement('div', 'condition-temp-container');
   conditionTempContainer.appendChild(conditionElement);
@@ -146,11 +146,11 @@ export const createCityElement = (cityInfo) => {
 };
 
 const getPromises = (searchCity) => {
-  const weatherPromises = searchCity.map(async (city) => {
+  const promises = searchCity.map(async (city) => {
     const weather = await getWeatherByCity(city.url);
     return { ...city, ...weather };
   });    
-  return weatherPromises;
+  return promises;
 };
 
 /**

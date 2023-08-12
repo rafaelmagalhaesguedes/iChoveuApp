@@ -145,17 +145,25 @@ export const createCityElement = (cityInfo) => {
 };
 
 /**
+ * Get array promises
+ */
+export const getArrayPromises = async (cityInfo) => {
+    const weatherPromises = cityInfo.map(async (city) => {
+      const weather = await getWeatherByCity(city.url);
+      return { ...city, ...weather };
+    });
+    return weatherPromises;
+  };
+
+/**
  * Event submit form
  */
 export const handleSearch = async (event) => {
   event.preventDefault();
   clearChildrenById('cities');
   const searchInput = document.getElementById('search-input').value;
-  const cityData = await searchCities(searchInput);
-  const weatherPromises = cityData.map(async (city) => {
-    const weather = await getWeatherByCity(city.url);
-    return { ...city, ...weather };
-  });
+  const cityInfo = await searchCities(searchInput);
+  const weatherPromises = getArrayPromises(cityInfo);
   const weatherData = await Promise.all(weatherPromises);
   return weatherData;
 };

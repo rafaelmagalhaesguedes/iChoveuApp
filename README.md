@@ -12,13 +12,23 @@ Link do App no ar: <a href="https://ichoveu-rafaelmagalhaesguedes.vercel.app/"> 
 
 ## Screens
 
-### Página inicial
+### Página inicial - Layout Web
 
-![initial-page](https://github.com/rafaelmagalhaesguedes/iChoveuApp/blob/main/images/initial-page.png)
+![initial-page-web](https://github.com/rafaelmagalhaesguedes/iChoveuApp/blob/main/images/initial-page.png)
 
-### Resultados de busca
+### Página inicial - Layout Mobile
+
+![initial-page-mobile](https://github.com/rafaelmagalhaesguedes/iChoveuApp/blob/main/images/initial-page-mobile.png)
+
+### Resultados de busca - Layout Web
 
 ![resultados de busca](https://github.com/rafaelmagalhaesguedes/iChoveuApp/blob/main/images/display-data.png)
+
+### Resultados de busca - Layout Mobile
+
+![resultados de busca](https://github.com/rafaelmagalhaesguedes/iChoveuApp/blob/main/images/display-data-mobile.png)
+
+### Previsão do Tempo - Layout Web
 
 ![botão previsão](https://github.com/rafaelmagalhaesguedes/iChoveuApp/blob/main/images/forecast-button.png)
 

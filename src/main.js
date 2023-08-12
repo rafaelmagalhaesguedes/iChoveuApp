@@ -24,6 +24,7 @@ const main = () => {
     const forecastContainer = document.getElementById('forecast-container');
     forecastContainer.classList.add('hidden');
   });
+
 };
 
 window.onload = () => {

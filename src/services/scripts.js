@@ -116,21 +116,28 @@ const createCityHeading = ({ name, country }) => {
 };
 
 /**
+ * Create Button Forecast
+ */
+const createButtonForecast = (cityInfo) => {
+    const forecastButton = createElement('button', 'view-forecast-button', 'Ver previsão');
+    forecastButton.addEventListener('click', async () => {
+        try {
+        const forecastResult = await fetchForecastData(cityInfo.url);
+        showForecast(forecastResult);
+        } catch (error) {
+        alert(error.message);
+        }
+    });
+  };
+
+/**
  * Cria um elemento HTML que representa uma cidade
  */
 export const createCityElement = (cityInfo) => {
   const cityElement = createElement('li', 'city');
   const cityHeadingContainer = createCityHeading(cityInfo);
   const infoContainer = createCityInfo(cityInfo);
-  const forecastButton = createElement('button', 'view-forecast-button', 'Ver previsão');
-  forecastButton.addEventListener('click', async () => {
-    try {
-      const forecastResult = await fetchForecastData(cityInfo.url);
-      showForecast(forecastResult);
-    } catch (error) {
-      alert(error.message);
-    }
-  });
+  const forecastButton = createButtonForecast(cityInfo);
   cityElement.appendChild(cityHeadingContainer);
   cityElement.appendChild(infoContainer);
   cityElement.appendChild(forecastButton);

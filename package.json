@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "vite": "^4.4.9"
+  },
+  "name": "ichoveu",
+  "version": "1.0.0",
+  "description": "App iChoveu - Informações Meteorológicas",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "vite --open"
+  },
+  "keywords": [
+    "Meteorologia",
+    "clima",
+    "tempo",
+    "previsão",
+    "do",
+    "tempo"
+  ],
+  "author": "Rafael Guedes",
+  "license": "ISC"
+}
